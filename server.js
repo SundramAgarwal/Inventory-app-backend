@@ -41,7 +41,7 @@ app.use("/api/contactus",contactRoute);
 
 
 app.get("/", (req,res) => {
-    res.send("Home Page");
+    res.send("Server is running fine!!");
 });
 
 // Error Middleware
