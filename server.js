@@ -7,7 +7,7 @@ const cors = require("cors");
 const userRoute = require("./routes/userRoute");
 const productRoute = require("./routes/productRoute");
 const contactRoute = require("./routes/contactRoute");
-const errorHandler = require("./middleWare/errorMiddleware");
+const errorHandler = require("./middleWare/errorMiddleware"); 
 const cookieParser = require("cookie-parser")
 const path = require("path");
 
@@ -15,7 +15,7 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: false})); 
 app.use(bodyParser.json());
 app.use(cors({
     origin: ["http://localhost:3000","https://inventory-app-chi-ashen.vercel.app"],
